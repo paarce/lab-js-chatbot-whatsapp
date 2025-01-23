@@ -1,77 +1,44 @@
-### CHATBOT Whatsapp (Meta Provider)
-
 <p align="center">
-  <img width="300" src="https://i.imgur.com/Oauef6t.png">
+  <a href="https://builderbot.vercel.app/">
+    <picture>
+      <img src="https://builderbot.vercel.app/assets/thumbnail-vector.png" height="80">
+    </picture>
+    <h2 align="center">BuilderBot</h2>
+  </a>
 </p>
 
 
-**Con esta librería, puedes construir flujos automatizados de conversación de manera agnóstica al proveedor de WhatsApp,** configurar respuestas automatizadas para preguntas frecuentes, recibir y responder mensajes de manera automatizada, y hacer un seguimiento de las interacciones con los clientes.  Además, puedes configurar fácilmente disparadores que te ayudaran a expandir las funcionalidades sin límites. **[Ver más informacion](https://bot-whatsapp.netlify.app/)**
 
-```js
-const main = async () => {
-    const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
+<p align="center">
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/@builderbot/bot">
+    <img alt="" src="https://img.shields.io/npm/v/@builderbot/bot?color=%2300c200&label=%40bot-whatsapp">
+  </a>
+  <a aria-label="Join the community on GitHub" href="https://link.codigoencasa.com/DISCORD">
+    <img alt="" src="https://img.shields.io/discord/915193197645402142?logo=discord">
+  </a>
+</p>
 
-    const adapterProvider = createProvider(MetaProvider, {
-        accountSid: process.env.ACC_SID,
-        authToken: process.env.ACC_TOKEN,
-        vendorNumber: process.env.ACC_VENDOR,
-    })
 
-    createBot({
-        flow: adapterFlow,
-        provider: adapterProvider,
-        database: adapterDB,
-    })
-}
+## Getting Started
+
+With this library, you can build automated conversation flows agnostic to the WhatsApp provider, set up automated responses for frequently asked questions, receive and respond to messages automatically, and track interactions with customers. Additionally, you can easily set up triggers to expand functionalities limitlessly.
+
 ```
-### Run
-- Run these commands
+npm create builderbot@latest
 ```
-npm install
-npm start
-ngrok http 3000
-```
-- Setup [webhook](#webhook)
-
-## Initial Setup
-
-- Crear cuenta empresarial https://business.facebook.com/
-- Crear app usando el mismo correo -> Otros -> Empresa
-- Configurar "Whatsapp", generar token de acceso, registrar tlf de prueba y exportar Postman collection
 
 
-#### Webhook
-- Intall and config ngrok
+## Documentation
 
-##### Setup
-- Run the app
-- Create a public url to setup the Webohook 
-```
-brew install ngrok
-ngrok config add-authtoken <token>
-ngrok http 3000
-```
-- Build the webhook url (find the similar URL in the logs):
-https://{----}.ngrok-free.app/webhook
-- Go to the Meta app website (and left panel): Whatsapp > Configuration
-- Fill up the form:
-    * Webhook URL
-    * verifyToken: Look for it in the .env file
-    * Press "Verify and save" and you should recive a "Webhook verified" message in the logs
-- Scroll down and find the "message" row under "Webhook's fields" and subscribe
-
-NOW YOUR ARE READY to use the chat in Whatsapp
-
-### Docs
-https://bot-whatsapp.netlify.app/docs/providers/meta/
+Visit [builderbot](https://builderbot.vercel.app/) to view the full documentation.
 
 
+## Official Course
 
----
-## Recursos
-- [📄 Documentación](https://bot-whatsapp.netlify.app/)
-- [🚀 Roadmap](https://github.com/orgs/codigoencasa/projects/1)
+If you want to discover all the functions and features offered by the library you can take the course.
+[View Course](https://app.codigoencasa.com/courses/builderbot?refCode=LEIFER)
+
+
+## Contact Us
 - [💻 Discord](https://link.codigoencasa.com/DISCORD)
-- [👌 Twitter](https://twitter.com/leifermendez)
-- [🎥 Youtube](https://www.youtube.com/watch?v=5lEMCeWEJ8o&list=PL_WGMLcL4jzWPhdhcUyhbFU6bC0oJd2BR)
+- [👌 𝕏 (Twitter)](https://twitter.com/leifermendez)
