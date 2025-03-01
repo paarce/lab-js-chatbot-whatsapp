@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "paths": {
+      "long": ["./node_modules/long/dist/Long.js"],
+      "@whiskeysockets/baileys": ["./node_modules/@whiskeysockets/baileys"]
+    }
+  }
+}
