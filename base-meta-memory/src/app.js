@@ -61,7 +61,7 @@ const fullSamplesFlow = addKeyword(['samples', utils.setEvent('SAMPLES')])
 const main = async () => {
     const adapterFlow = createFlow([welcomeFlow, registerFlow, fullSamplesFlow])
     const adapterProvider = createProvider(Provider, {
-        jwtToken: 'EAAIUICt6nrgBO5d246yEYFapvUuSZCKP5i7tJSKQOZBtliE2jmh9ai72XFO9NshBBpLBsBWa1ZBK63D8bX0EDx6CGmQZA1IdKKE5ZAZCxsv372Xz89NXXBbVJzgbRcDg0C6pgmdy2tfYFCu8f3RlID5gV3Xc4zQ9dVvypkF3d107eCmaMMrHjs92GGhGVSxD37eluQAWVvEbe3PmGqzUYOLlJuEgZDZD',
+        jwtToken: 'EAAIUICt6nrgBO8xq1KRAOVBCkS68pVSYiAG821z5iU5yVtadZCR33Hm5l3QONmggwR7jQwfv7aRetZCC2MHFilC7gG5ITzxg47IeZC3ZCWBSp0G2w6oUSB0IcaSzzGVHOZARylCtd6gGoAZAikWBT0ZCgthRV7GVXZCLmS6ZAt4Fs3WYzij42Mtqir0nFps7HL31S4VWKejqRcWwMgUbfbIx6RLZBZC',
         numberId: '580298731825834',
         verifyToken: 'verifyToken',
         version: 'v18.0'
